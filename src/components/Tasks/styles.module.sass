@@ -1,0 +1,60 @@
+@use 'variables'
+
+.tasks
+    width: 100%
+    display: flex
+    flex-direction: column
+
+    &_header
+        display: flex
+        justify-content: space-between
+        margin-bottom: 15px
+
+        .left
+            display: flex
+            align-items: center
+            gap: 0.5rem
+
+            .title
+                color: variables.$text_primary_color
+                font-weight: 700
+                font-size: 0.85rem
+                margin-bottom: 0
+
+            .value
+                color: variables.$white
+                font-size: 0.75rem
+                font-weight: 600
+                background: variables.$bg_secondary
+                border-radius: 50px
+                padding: 3px 7px
+                display: flex
+                align-items: center
+                justify-content: center
+
+        .right
+            display: flex
+            align-items: center
+            gap: 0.5rem
+
+            .title
+                color: variables.$text_secondary_color
+                font-weight: 700
+                font-size: 0.85rem
+                margin-bottom: 0
+
+            .value
+                color: variables.$white
+                font-size: 0.75rem
+                font-weight: 600
+                background: variables.$bg_secondary
+                border-radius: 50px
+                padding: 3px 7px
+                display: flex
+                align-items: center
+                justify-content: center
+
+    &_list
+        display: flex
+        flex-direction: column
+        gap: 0.5rem

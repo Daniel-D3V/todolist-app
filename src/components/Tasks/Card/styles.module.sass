@@ -1,0 +1,44 @@
+@use 'variables'
+
+.taskCard
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 0.5rem
+    background: variables.$bg_secondary
+    padding: 12px 15px
+    border-radius: 5px
+
+    .checkButton
+        width: 5%
+        border: none
+        outline: none
+        background: transparent
+        display: flex
+        align-items: center
+        justify-content: center
+
+        svg
+            color: variables.$text_primary_color
+
+    .title
+        width: 100%
+        color: variables.$gray
+        font-size: 0.85rem
+        margin-bottom: 0
+
+        &_completed
+            opacity: 0.4
+            text-decoration-line: line-through
+
+    .deleteButton
+        width: 5%
+        border: none
+        outline: none
+        background: transparent
+        display: flex
+        align-items: center
+        justify-content: center
+
+        svg
+            color: variables.$text_color

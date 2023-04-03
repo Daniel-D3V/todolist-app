@@ -1,0 +1,41 @@
+@use 'variables'
+
+.header
+    width: 100%
+    margin-bottom: 2rem
+
+    .logo
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 3rem
+
+    &_form
+        display: flex
+        gap: 0.5rem
+
+        &_input
+            width: 100%
+            padding: 10px 15px
+            border: 1px solid variables.$border_color
+            outline: none
+            background: variables.$bg_secondary
+            border-radius: 3px
+            font-weight: 400
+            color: variables.$input_text_color
+
+        &_button
+            width: 20%
+            outline: none
+            border: none
+            background: variables.$primary_color
+            border-radius: 3px
+            color: variables.$white
+
+@media screen and (max-width: 500px)
+    .header
+        &_form
+            &_button
+                width: 15%
+                span
+                    display: none
